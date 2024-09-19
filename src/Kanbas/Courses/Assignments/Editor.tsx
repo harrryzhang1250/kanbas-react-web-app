@@ -88,7 +88,7 @@ export default function AssignmentEditor() {
           <td align="left" valign="top">
             {/* Assign To */}
             <label htmlFor="wd-assign-to">Assign to</label><br/>
-            <input id="wd-points" value="Everyone"/>
+            <input id="wd-assign-to" value="Everyone"/>
             <br/><br/>
 
             {/* Due Date */}
