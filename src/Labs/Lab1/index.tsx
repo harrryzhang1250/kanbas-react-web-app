@@ -144,13 +144,16 @@ export default function Lab1() {
         <h4>Image tag</h4>
         Loading an image from the internet:
         <br/>
-        <img id="wd-starship" width="400px"
-             src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
+        <img id="wd-starship"
+             width="400px"
+             src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"
+        />
         <br/>
         Loading a local image:
         <br/>
-        <img id="wd-teslabot" src="logo512.png" height="200px"/>
+        <img id="wd-teslabot" src="images/teslabot.jpg" height="200px"/>
       </div>
+
 
       <div id="wd-forms">
         <h4>Form Elements</h4>
@@ -182,7 +185,13 @@ export default function Lab1() {
 
           <h5>Text boxes</h5>
           <label>Biography:</label><br/>
-          <textarea id="wd-textarea" cols={30} rows={10} placeholder="Biography">
+          <textarea id="wd-textarea" cols={30} rows={10}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
           </textarea>
 
           <h5 id="wd-buttons">Buttons</h5>
@@ -245,6 +254,35 @@ export default function Lab1() {
             <option value="FANTASY">Fantasy</option>
           </select>
 
+          <h4>Other HTML field types</h4>
+
+          <label htmlFor="wd-text-fields-email"> Email: </label>
+          <input type="email"
+                 placeholder="jdoe@somewhere.com"
+                 id="wd-text-fields-email"/><br/>
+
+          <label htmlFor="wd-text-fields-salary-start"> Starting salary:
+          </label>
+          <input type="number"
+                 id="wd-text-fields-salary-start"
+                 placeholder="1000"
+                 value="100000"/><br/>
+
+          <label htmlFor="wd-text-fields-rating"> Rating: </label>
+          <input type="range" id="wd-text-fields-rating"
+                 placeholder="Doe"
+                 max="5"
+                 value="4"/><br/>
+
+          <label htmlFor="wd-text-fields-dob"> Date of birth: </label>
+          <input type="date"
+                 id="wd-text-fields-dob"
+                 value="2000-01-21"/><br/>
+
+          <h4>Anchor tag</h4>
+          Please
+          <a id="wd-lipsum" href="https://www.lipsum.com">click here</a>
+          to get dummy text<br/>
 
         </form>
       </div>
