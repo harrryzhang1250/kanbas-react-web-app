@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import React from "react";
 export default function KanbasNavigation() {
   return (
     <div id="wd-kanbas-navigation">
@@ -9,5 +10,6 @@ export default function KanbasNavigation() {
       <Link to="/Kanbas/Calendar" id="wd-calendar-link">Calendar</Link><br/>
       <Link to="/Kanbas/Inbox" id="wd-inbox-link">Inbox</Link><br/>
       <Link to="/Labs" id="wd-labs-link">Labs</Link><br/>
+      <Link to="/">Back to Landing Page</Link>
     </div>
   );}
