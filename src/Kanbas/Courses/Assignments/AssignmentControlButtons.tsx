@@ -5,7 +5,7 @@ export default function AssignmentControlButtons() {
   return (
     <div className="d-flex align-items-center ms-auto">
       <GreenCheckmark />
-      <IoEllipsisVertical className="ms-3 fs-4"/>
+      <IoEllipsisVertical className="ms-3 mb-1 fs-4"/>
     </div>
   )
 }
