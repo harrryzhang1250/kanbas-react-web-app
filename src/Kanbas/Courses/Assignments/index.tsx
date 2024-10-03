@@ -1,65 +1,83 @@
 import {useParams} from "react-router";
+import { FaCaretDown } from "react-icons/fa6";
+import AssignmentsControls from "./AssignmentsControls";
+import {BsGripVertical} from "react-icons/bs";
+import AssignmentPercentageButtons from "./AssignmentPercentageButtons";
+import AssignmentsMoveButtons from "./AssignmentsMoveButtons";
+import AssignmentControlButtons from "./AssignmentControlButtons";
 
 export default function Assignments() {
-  const { cid } = useParams();
+  const {cid} = useParams();
 
   return (
     <div id="wd-assignments">
-      <input id="wd-search-assignment"
-             placeholder="Search for Assignments"
-             style={{marginRight: '5px'}} />
-      <button id="wd-add-assignment-group" style={{marginRight: '5px'}}>+ Group</button>
-      <button id="wd-add-assignment">+ Assignment</button>
+        <div><AssignmentsControls/></div>
 
-      <h3 id="wd-assignments-title">
-        ASSIGNMENTS 40% of Total <button>+</button>
-      </h3>
-      <ul id="wd-assignment-list">
-        <li className="wd-assignment-list-item">
-          {/* Assignment Title Link */}
-          <a className="wd-assignment-link"
-             href={`#/Kanbas/Courses/${cid}/Assignments/123`}>
-            A1 - ENV + HTML
-          </a>
-
-          {/* Assignment Details */}
-          <div className="wd-assignment-details">
-            Multiple Modules | <strong>Not available until</strong> May 6 at 12:00am
-            <br/>
-            <strong>Due</strong> May 13 at 11:59pm | 100 pts
+        <ul id="wd-assignment-list" className="list-group rounded-0 fs-5">
+          <div className="wd-assignments-title wd-title p-3 ps-2 bg-secondary">
+            <BsGripVertical className="me-2 fs-3" />
+            <FaCaretDown className="me-2" />
+            ASSIGNMENTS
+            <AssignmentPercentageButtons />
           </div>
-        </li>
+          <li className="wd-assignment-list-item list-group-item p-3 ps-1 d-flex align-items-center">
+            <AssignmentsMoveButtons/>
+            <div>
+              {/* Assignment Title Link */}
+              <a className="wd-assignment-link"
+                 href={`#/Kanbas/Courses/${cid}/Assignments/123`}>
+                A1
+              </a>
+              {/* Assignment Details */}
+              <div className="wd-assignment-details">
+                <span className="text-danger">Multiple Modules</span> |
+                <strong className="ms-2">Not available until</strong> May 6 at 12:00am |
+                <br />
+                <strong>Due</strong> May 13 at 11:59pm | 100 pts
+              </div>
+            </div>
+            <AssignmentControlButtons/>
+          </li>
 
-        <li className="wd-assignment-list-item">
-          {/* Assignment Title Link */}
-          <a className="wd-assignment-link"
-             href={`#/Kanbas/Courses/${cid}/Assignments/124`}>
-            A2 - CSS + BOOTSTRAP
-          </a>
 
-          {/* Assignment Details */}
-          <div className="wd-assignment-details">
-            Multiple Modules | <strong>Not available until</strong> May 13 at 12:00am
-            <br/>
-            <strong>Due</strong> May 20 at 11:59pm | 100 pts
-          </div>
-        </li>
+          <li className="wd-assignment-list-item list-group-item p-3 ps-1 d-flex align-items-center">
+            <AssignmentsMoveButtons/>
+            <div>
+              {/* Assignment Title Link */}
+              <a className="wd-assignment-link"
+                 href={`#/Kanbas/Courses/${cid}/Assignments/124`}>
+                A2
+              </a>
+              {/* Assignment Details */}
+              <div className="wd-assignment-details">
+                <span className="text-danger">Multiple Modules</span> |
+                <strong className="ms-2">Not available until</strong> May 6 at 12:00am |
+                <br />
+                <strong>Due</strong> May 13 at 11:59pm | 100 pts
+              </div>
+            </div>
+            <AssignmentControlButtons/>
+          </li>
 
-        <li className="wd-assignment-list-item">
-          {/* Assignment Title Link */}
-          <a className="wd-assignment-link"
-             href={`#/Kanbas/Courses/${cid}/Assignments/125`}>
-            A3 - JAVASCRIPT + REACT
-          </a>
-
-          {/* Assignment Details */}
-          <div className="wd-assignment-details">
-            Multiple Modules | <strong>Not available until</strong> May 20 at 12:00am
-            <br/>
-            <strong>Due</strong> May 27 at 11:59pm | 100 pts
-          </div>
-        </li>
-      </ul>
+          <li className="wd-assignment-list-item list-group-item p-3 ps-1 d-flex align-items-center">
+            <AssignmentsMoveButtons/>
+            <div>
+              {/* Assignment Title Link */}
+              <a className="wd-assignment-link"
+                 href={`#/Kanbas/Courses/${cid}/Assignments/124`}>
+                A3
+              </a>
+              {/* Assignment Details */}
+              <div className="wd-assignment-details">
+                <span className="text-danger">Multiple Modules</span> |
+                <strong className="ms-2">Not available until</strong> May 6 at 12:00am |
+                <br/>
+                <strong>Due</strong> May 13 at 11:59pm | 100 pts
+              </div>
+            </div>
+            <AssignmentControlButtons/>
+          </li>
+        </ul>
     </div>
   );
 }
