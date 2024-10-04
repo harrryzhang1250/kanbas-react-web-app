@@ -1,25 +1,38 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {useParams} from "react-router";
+
 export default function CoursesNavigation() {
   const { cid } = useParams();
-
   return (
     <div id="wd-courses-navigation" className="wd list-group fs-5 rounded-0">
-      <Link id="wd-course-home-link"    to={`/Kanbas/Courses/${cid}/Home`}
-            className="list-group-item active border border-0">Home</Link>
-      <Link id="wd-course-modules-link" to={`/Kanbas/Courses/${cid}/Modules`}
-            className="list-group-item text-danger border border-0">Modules</Link>
-      <Link id="wd-course-piazza-link"  to={`/Kanbas/Courses/${cid}/Piazza`}
-            className="list-group-item text-danger border border-0">Piazza</Link>
-      <Link id="wd-course-zoom-link"    to={`/Kanbas/Courses/${cid}/Zoom`}
-            className="list-group-item text-danger border border-0">Zoom</Link>
-      <Link id="wd-course-quizzes-link" to={`/Kanbas/Courses/${cid}/Assignments`}
-            className="list-group-item text-danger border border-0">Assignments</Link>
-      <Link id="wd-course-assignments-link" to={`/Kanbas/Courses/${cid}/Quizzes`}
-            className="list-group-item text-danger border border-0">Quizzes</Link>
-      <Link id="wd-course-grades-link"  to={`/Kanbas/Courses/${cid}/Grades`}
-            className="list-group-item text-danger border border-0">Grades</Link>
-      <Link id="wd-course-people-link"  to={`/Kanbas/Courses/${cid}/People`}
-            className="list-group-item text-danger border border-0">People</Link>
+      <NavLink to={`/Kanbas/Courses/${cid}/Home`} id="wd-course-home-link"
+               className={({ isActive }) => `list-group-item border border-0 ${isActive ? "active" : "text-danger"}`}>
+        Home
+      </NavLink>
+      <NavLink to={`/Kanbas/Courses/${cid}/Modules`} id="wd-course-modules-link"
+               className={({ isActive }) => `list-group-item border border-0 ${isActive ? "active" : "text-danger"}`}>
+        Modules
+      </NavLink>
+      <NavLink to={`/Kanbas/Courses/${cid}/Piazza`} id="wd-course-piazza-link"
+               className={({ isActive }) => `list-group-item border border-0 ${isActive ? "active" : "text-danger"}`}>
+        Piazza
+      </NavLink>
+      <NavLink to={`/Kanbas/Courses/${cid}/Zoom`} id="wd-course-zoom-link"
+               className={({ isActive }) => `list-group-item border border-0 ${isActive ? "active" : "text-danger"}`}>
+        Zoom
+      </NavLink>
+      <NavLink to={`/Kanbas/Courses/${cid}/Assignments`} id="wd-course-quizzes-link"
+               className={({ isActive }) => `list-group-item border border-0 ${isActive ? "active" : "text-danger"}`}>
+        Assignments
+      </NavLink>
+      <NavLink to={`/Kanbas/Courses/${cid}/Quizzes`} id="wd-course-assignments-link"
+               className={({ isActive }) => `list-group-item border border-0 ${isActive ? "active" : "text-danger"}`}>
+        Quizzes
+      </NavLink>
+      <NavLink to={`/Kanbas/Courses/${cid}/People`} id="wd-course-people-link"
+               className={({ isActive }) => `list-group-item border border-0 ${isActive ? "active" : "text-danger"}`}>
+        People
+      </NavLink>
     </div>
-  );}
+  );
+}

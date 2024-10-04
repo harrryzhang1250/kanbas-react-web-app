@@ -7,12 +7,14 @@ body * {  font-family: Arial, Helvetica, sans-serif;  }
     padding-left: 140px !important;
   }
 }
+
 .wd-dashboard-course .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Ensures that the content is spaced */
   min-height: 180px;
 }
+
 .list-group.wd > .list-group-item.active {
   color: black;
   background-color: white;
