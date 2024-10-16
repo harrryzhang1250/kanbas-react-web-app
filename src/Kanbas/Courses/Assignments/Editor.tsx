@@ -1,22 +1,32 @@
+import { useParams, useNavigate } from 'react-router-dom';
+import { assignments } from "../../Database"
 export default function AssignmentEditor() {
+  const { cid, aid } = useParams();
+  const assignment = assignments.find((assignment: any) => assignment._id === aid);
+  const title = assignment && assignment.title;
+  const description = assignment && assignment.description;
+  const points = assignment && assignment.points;
+  const available_from = assignment && assignment.available_from;
+  const available_until = assignment && assignment.available_until;
+  const due_date = assignment && assignment.due_date;
+
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    navigate(`/Kanbas/Courses/${cid}/Assignments`);
+  };
+
   return (
     <div id="wd-assignments-editor" className="container">
       {/* Assignment Name */}
       <div className="mb-4">
         <label htmlFor="wd-name" className="form-label">Assignment Name</label>
-        <input id="wd-name" className="form-control" value="A1 - ENV + HTML" />
+        <input id="wd-name" className="form-control" value={title}/>
       </div>
 
       {/* Description */}
       <div className="mb-4">
         <textarea id="wd-description" className="form-control" rows={10}>
-          The assignment is available online. Submit a link to the landing page of your Web application running on Netlify.
-          The landing page should include the following:
-          Your full name and section
-          Links to each of the lab assignments
-          Links to the Kanbas application
-          Links to all relevant source code repositories
-          The Kanbas application should include a link to navigate back to the landing page.
+          {description}
         </textarea>
       </div>
 
@@ -26,7 +36,7 @@ export default function AssignmentEditor() {
           <label htmlFor="wd-points" className="form-label">Points</label>
         </div>
         <div className="col-md-9">
-          <input id="wd-points" className="form-control" value={100} />
+          <input id="wd-points" className="form-control" value={points}/>
         </div>
       </div>
 
@@ -107,16 +117,16 @@ export default function AssignmentEditor() {
             <input id="wd-assign-to" className="form-control" value="Everyone"/>
             {/* Due Date */}
             <label htmlFor="wd-due-date" className="form-label pt-3"><strong>Due</strong></label>
-            <input type="date" id="wd-due-date" className="form-control" value="2024-05-13"/>
+            <input type="date" id="wd-due-date" className="form-control" value={due_date}/>
             {/*From - Until*/}
             <div className="row mt-3 mb-3">
               <div className="col-md-6">
                 <label htmlFor="wd-available-from" className="form-label"><strong>Available From</strong></label>
-                <input type="date" id="wd-available-from" className="form-control" value="2024-05-06"/>
+                <input type="date" id="wd-available-from" className="form-control" value={available_from}/>
               </div>
               <div className="col-md-6">
                 <label htmlFor="wd-available-until" className="form-label"><strong>Until</strong></label>
-                <input type="date" id="wd-available-until" className="form-control" value="2024-05-28"/>
+                <input type="date" id="wd-available-until" className="form-control" value={available_until}/>
               </div>
             </div>
           </div>
@@ -128,8 +138,14 @@ export default function AssignmentEditor() {
 
       {/* Save and Cancel Buttons */}
       <div className="d-flex justify-content-end">
-        <button id="wd-cancel" className="btn btn-secondary me-1">Cancel</button>
-        <button id="wd-save" className="btn btn-danger me-2">Save</button>
+        <button id="wd-cancel" className="btn btn-secondary me-1"
+                onClick={handleNavigation}>
+          Cancel
+        </button>
+        <button id="wd-save" className="btn btn-danger me-2"
+                onClick={handleNavigation}>
+          Save
+        </button>
       </div>
     </div>
   );

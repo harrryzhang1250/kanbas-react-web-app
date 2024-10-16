@@ -7,12 +7,12 @@ import React from "react";
 export default function Labs() {
   return (
     <div>
-      <h1>Labs</h1>
+      <h1>Zinan Zhang - Section #1</h1>
       <TOC/>
       <Routes>
-        <Route path="Lab1" element={<Lab1/>}/>
+      <Route path="Lab1" element={<Lab1/>}/>
         <Route path="Lab2" element={<Lab2/>}/>
-        <Route path="Lab3" element={<Lab3/>}/>
+        <Route path="Lab3/*" element={<Lab3 />} />
       </Routes>
     </div>
   );

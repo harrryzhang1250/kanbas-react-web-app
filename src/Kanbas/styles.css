@@ -7,7 +7,10 @@ body * {  font-family: Arial, Helvetica, sans-serif;  }
     padding-left: 140px !important;
   }
 }
-
+.wd-dashboard-course-title {
+  font-size: large;
+  color: darkblue;
+}
 .wd-dashboard-course .card-body {
   display: flex;
   flex-direction: column;

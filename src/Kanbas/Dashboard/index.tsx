@@ -1,21 +1,8 @@
 import { Link } from "react-router-dom";
-
-const courses = [
-  { id: 'CS1234', name: 'Web Development', description: 'Full Stack software developer' },
-  { id: 'CS2345', name: 'Node JS', description: 'Backend development with Node.js' },
-  { id: 'CS3456', name: 'Database Design', description: 'Learn SQL and database management' },
-  { id: 'CS4567', name: 'DevOps', description: 'Learn CI/CD, Docker, and Kubernetes' },
-  { id: 'CS5678', name: 'Machine Learning', description: 'Introduction to AI and ML' },
-  { id: 'CS6789', name: 'Cybersecurity', description: 'Learn about securing software systems' },
-  { id: 'CS1234', name: 'React JS', description: 'Full Stack software developer' },
-  { id: 'CS2345', name: 'Node JS', description: 'Backend development with Node.js' },
-  { id: 'CS3456', name: 'Database Design', description: 'Learn SQL and database management' },
-  { id: 'CS4567', name: 'DevOps', description: 'Learn CI/CD, Docker, and Kubernetes' },
-  { id: 'CS5678', name: 'Machine Learning', description: 'Introduction to AI and ML' },
-  { id: 'CS6789', name: 'Cybersecurity', description: 'Learn about securing software systems' },
-];
+import * as db from "../Database";
 
 export default function Dashboard() {
+  const courses = db.courses;
   return (
     <div id="wd-dashboard">
       <h1 id="wd-dashboard-title">Dashboard</h1> <hr />
@@ -26,16 +13,16 @@ export default function Dashboard() {
             <div className="wd-dashboard-course col" style={{ width: "300px" }}>
               <div className="card rounded-3 overflow-hidden">
                 <Link className="wd-dashboard-course-link text-decoration-none text-dark"
-                      to={`/Kanbas/Courses/${course.id}/Home`}>
-                  <img src="/images/reactjs.jpg" width="100%" height={160}/>
+                      to={`/Kanbas/Courses/${course._id}/Home`}>
+                  <img src={`/images/${course._id}.jpg`} width="100%" height={160}/>
                   <div className="card-body" >
-                    <h5 className="wd-dashboard-course-title card-title">
-                      {course.id} {course.name}
+                    <h5 className="wd-dashboard-course-title card-title overflow-y-hidden"  style={{ maxHeight: 20 }}>
+                      {course._id} {course.name}
                     </h5>
-                    <p className="wd-dashboard-course-title card-text">
+                    <p className="wd-dashboard-course-text card-text overflow-y-hidden"  style={{ maxHeight: 100 }}>
                       {course.description}
                     </p>
-                    <button className="btn btn-primary"> Go</button>
+                    <button className="btn btn-primary" style={{ maxWidth: 50 }}> Go</button>
                   </div>
                 </Link>
               </div>
