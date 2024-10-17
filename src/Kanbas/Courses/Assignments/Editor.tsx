@@ -1,4 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
+import { SetStateAction, useState } from 'react';
+import Select from 'react-select';
 import { assignments } from "../../Database"
 export default function AssignmentEditor() {
   const { cid, aid } = useParams();
@@ -13,6 +15,21 @@ export default function AssignmentEditor() {
   const navigate = useNavigate();
   const handleNavigation = () => {
     navigate(`/Kanbas/Courses/${cid}/Assignments`);
+  };
+
+  const options = [
+    { value: 'everyone', label: 'Everyone' },
+    { value: 'specific-students', label: 'Specific Students' },
+    { value: 'groups', label: 'Groups' },
+  ];
+  const [selectedOptions, setSelectedOptions] = useState([{ value: 'everyone', label: 'Everyone' }]);
+  const [submissionType, setSubmissionType] = useState("Online");
+  const handleSelectChange = (selectedOptions: any) => {
+    setSelectedOptions(selectedOptions || []);
+  };
+
+  const handleSubmissionTypeChange = (e: any) => {
+    setSubmissionType(e.target.value);
   };
 
   return (
@@ -114,7 +131,13 @@ export default function AssignmentEditor() {
         <div className="col-md-9">
           <div className="wd-assignment-editor-frame">
             <label htmlFor="wd-assign-to" className="form-label"><strong>Assign to</strong></label>
-            <input id="wd-assign-to" className="form-control" value="Everyone"/>
+            <Select
+              value={selectedOptions}
+              onChange={handleSelectChange}
+              options={options}
+              isMulti
+              placeholder="Assign to..."
+            />
             {/* Due Date */}
             <label htmlFor="wd-due-date" className="form-label pt-3"><strong>Due</strong></label>
             <input type="date" id="wd-due-date" className="form-control" value={due_date}/>
