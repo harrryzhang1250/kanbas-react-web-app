@@ -1,7 +1,8 @@
 import {CiSearch} from "react-icons/ci";
 import { GoPlus } from "react-icons/go";
 
-export default function AssignmentsControls() {
+export default function AssignmentsControls({handleAddAssignment, isFaculty}:
+                                              {handleAddAssignment: () => void, isFaculty: boolean}) {
   return (
     <div id="wd-assignmentsControls" className="d-flex mb-4">
       {/* Search Input */}
@@ -19,18 +20,22 @@ export default function AssignmentsControls() {
         />
       </div>
 
-      <div className="ms-auto d-flex align-items-center">
+      {isFaculty && <div className="ms-auto d-flex align-items-center">
         {/* Group Button */}
-        <button id="wd-add-assignment-group" className="btn btn-lg btn-secondary d-flex align-items-center me-1"
+        <button id="wd-add-assignment-group"
+                className="btn btn-lg btn-secondary d-flex align-items-center me-1"
         >
           <GoPlus className="fs-4"/>Group
         </button>
 
         {/* Assignment Button */}
-        <button id="wd-add-assignment" className="btn btn-lg btn-danger d-flex align-items-center me-1">
-          <GoPlus className="fs-4"/>Assignment
+        <button id="wd-add-assignment"
+                className="btn btn-lg btn-danger d-flex align-items-center me-1"
+                onClick={() => handleAddAssignment()}>
+          <GoPlus className="fs-4"/>
+          Assignment
         </button>
-      </div>
+      </div>}
     </div>
   )
 }

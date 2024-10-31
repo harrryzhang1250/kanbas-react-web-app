@@ -1,7 +1,6 @@
 import { GoPlus } from "react-icons/go";
 import {IoEllipsisVertical} from "react-icons/io5";
 
-
 export default function AssignmentPercentageButtons() {
   return (
     <div className="d-flex align-items-center float-end">

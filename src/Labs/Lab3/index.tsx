@@ -28,49 +28,60 @@ import Square from "./Square";
 import Highlight from "./Highlight";
 import PathParameters from "./PathParameters";
 import AddPathParameters from "./AddPathParameters";
+import {useSelector} from "react-redux";
 
 export default function Lab3() {
-  return (
-    <div>
-      <h2>Lab 3</h2>
-      <VariablesAndConstants/>
-      <VariableTypes/>
-      <BooleanVariables/>
-      <TernaryOperator/>
-      <ConditionalOutputIfElse/>
-      <LegacyFunctions/>
-      <ArrowFunctions/>
-      <ImpliedReturn/>
-      <SimpleArrays/>
-      <ArrayIndexAndLength/>
-      <AddingAndRemovingToFromArrays/>
-      <ForLoops/>
-      <MapFunction/>
-      <FindFunction/>
-      <FindIndex/>
-      <FilterFunction/>
-      <JsonStringify/>
-      <House/>
-      <TodoItem/>
-      <TodoList/>
-      <Spreading/>
-      <Destructing/>
-      <FunctionDestructing/>
-      <DestructingImports/>
-      <Classes/>
-      <Styles/>
+    const { todos } = useSelector((state: any) => state.todoReducer);
+    return (
+      <div>
+          <h2>Lab 3</h2>
+          <ul className="list-group">
+              {todos.map((todo: any) => (
+                <li className="list-group-item" key={todo.id}>
+                    {todo.title}
+                </li>
+              ))}
+          </ul>
+          <hr/>
+          <VariablesAndConstants/>
+          <VariableTypes/>
+          <BooleanVariables/>
+          <TernaryOperator/>
+          <ConditionalOutputIfElse/>
+          <LegacyFunctions/>
+          <ArrowFunctions/>
+          <ImpliedReturn/>
+          <SimpleArrays/>
+          <ArrayIndexAndLength/>
+          <AddingAndRemovingToFromArrays/>
+          <ForLoops/>
+          <MapFunction/>
+          <FindFunction/>
+          <FindIndex/>
+          <FilterFunction/>
+          <JsonStringify/>
+          <House/>
+          <TodoItem/>
+          <TodoList/>
+          <Spreading/>
+          <Destructing/>
+          <FunctionDestructing/>
+          <DestructingImports/>
+          <Classes/>
+          <Styles/>
 
-      <h4>Square of 4</h4>
-      <Square>4</Square>
-      <hr/>
+          <h4>Square of 4</h4>
+          <Square>4</Square>
+          <hr/>
 
-      <Highlight>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipitratione eaque illo minus cum, saepe totam
-        vel nihil repellat nemo explicabo excepturi consectetur. Modi omnis minus sequi maiores, provident voluptates.
-      </Highlight>
-      <hr/>
+          <Highlight>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipitratione eaque illo minus cum, saepe totam
+              vel nihil repellat nemo explicabo excepturi consectetur. Modi omnis minus sequi maiores, provident
+              voluptates.
+          </Highlight>
+          <hr/>
 
-      <PathParameters/>
-    </div>
-  );
+          <PathParameters/>
+      </div>
+    );
 }
