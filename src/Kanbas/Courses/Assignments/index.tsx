@@ -20,6 +20,9 @@ export default function Assignments({ isFaculty }: { isFaculty: boolean }) {
   const assignments = useSelector((state: any) => state.assignmentsReducer.assignments);
   const dispatch = useDispatch();
 
+  // Define a state variable to track the selected assignment ID
+  const [assignmentToDelete, setAssignmentToDelete] = useState(null);
+
   const fetchAssignments = async () => {
     const assignments = await assignmentsClient.findAssignmentsForCourse(cid as string);
     dispatch(setAssignments(assignments));
@@ -43,10 +46,13 @@ export default function Assignments({ isFaculty }: { isFaculty: boolean }) {
     dispatch(setAssignment(newAssignment));
   };
 
-  const handleDeleteAssignment = async (assignmentId: string) => {
-    await assignmentsClient.deleteAssignment(assignmentId);
-    dispatch(deleteAssignment(assignmentId));
-  }
+  const handleDeleteAssignment = async () => {
+    if (assignmentToDelete) {
+      await assignmentsClient.deleteAssignment(assignmentToDelete);
+      dispatch(deleteAssignment(assignmentToDelete));
+      setAssignmentToDelete(null); // reset after deletion
+    }
+  };
 
   return (
     <div id="wd-assignments">
@@ -81,13 +87,13 @@ export default function Assignments({ isFaculty }: { isFaculty: boolean }) {
             <div className="d-flex align-items-center ms-auto">
               {isFaculty && <FaTrash className="text-danger me-3 mb-1"
                                      data-bs-toggle="modal"
-                                     data-bs-target={`#wd-delete-assignment-dialog-${assignment._id}`}/>}
+                                     data-bs-target="#wd-delete-assignment-dialog"
+                                     onClick={() => setAssignmentToDelete(assignment._id)}
+              />}
               <GreenCheckmark/>
               <IoEllipsisVertical className="ms-3 mb-1 fs-4"/>
               <AssignmentDeleteConfirm
-                aid={assignment._id}
-                assignmentName={assignment.title}
-                deleteAssignment={(aid) => { isFaculty && handleDeleteAssignment(aid)}}
+                deleteAssignment={() => { isFaculty && handleDeleteAssignment()}}
               />
             </div>
           </li>
