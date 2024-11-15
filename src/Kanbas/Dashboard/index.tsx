@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import { Link } from "react-router-dom";
 import {enroll, unenroll} from "./enrollmentsReducer";
+import * as courseClient from "../Courses/client";
 
 export default function Dashboard(
   { courses, course, setCourse, addNewCourse,
@@ -12,11 +13,25 @@ export default function Dashboard(
   deleteCourse: (course: any) => void;
   updateCourse: () => void;
   isFaculty: boolean;}) {
+  const [allCourses, setAllCourses] = useState<any[]>([]);
   const { currentUser } = useSelector((state: any) => state.accountReducer);
   const isStudent = currentUser?.role === "STUDENT";
   const { enrollments } = useSelector((state: any) => state.enrollmentsReducer);
   const [showAllCourses, setShowAllCourses] = useState(false);
   const dispatch = useDispatch();
+
+  const fetchAllCourses = async () => {
+    let allCourses = [];
+    try {
+      allCourses = await courseClient.fetchAllCourses();
+    } catch (error) {
+      console.error(error);
+    }
+    setAllCourses(allCourses);
+  };
+  useEffect(() => {
+    fetchAllCourses();
+  },[])
 
   const enrollCourse = ({ course }: { course: any }) => {
     const newEnrollment = {
@@ -37,9 +52,7 @@ export default function Dashboard(
       enrollment.user === currentUser._id && enrollment.course === course._id);
 
   // Filter show courses
-  const filteredCourses = showAllCourses
-    ? courses
-    : courses.filter((course) => isCourseEnrolled(course));
+  const filteredCourses = showAllCourses ? allCourses : courses;
 
   return (
     <div id="wd-dashboard">
