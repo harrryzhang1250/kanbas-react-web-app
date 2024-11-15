@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import { Link } from "react-router-dom";
-import {enroll, unenroll} from "./enrollmentsReducer";
+import {enroll, unenroll, setEnrollments} from "./enrollmentsReducer";
 import * as courseClient from "../Courses/client";
+import * as userClient from "../Account/client";
+import * as enrollClient from "./enrollmentsClient";
 
 export default function Dashboard(
   { courses, course, setCourse, addNewCourse,
@@ -16,6 +18,9 @@ export default function Dashboard(
   const [allCourses, setAllCourses] = useState<any[]>([]);
   const { currentUser } = useSelector((state: any) => state.accountReducer);
   const isStudent = currentUser?.role === "STUDENT";
+  // everytime enroll or unroll a course,
+  // need to retrive from the server of the newest list
+  const [myCourses, setMyCourses] = useState<any[]>([]);
   const { enrollments } = useSelector((state: any) => state.enrollmentsReducer);
   const [showAllCourses, setShowAllCourses] = useState(false);
   const dispatch = useDispatch();
@@ -29,22 +34,33 @@ export default function Dashboard(
     }
     setAllCourses(allCourses);
   };
+
+  const fetchMyCourses = async () => {
+    const myCourses = await userClient.findMyCourses();
+    setMyCourses(myCourses);
+  }
+
+  const fetchEnrollments = async () => {
+    const userEnrollments = await userClient.findAllMyEnrollments(currentUser._id);
+    dispatch(setEnrollments(userEnrollments));
+  }
+
   useEffect(() => {
+    fetchMyCourses()
     fetchAllCourses();
+    fetchEnrollments();
   },[])
 
-  const enrollCourse = ({ course }: { course: any }) => {
-    const newEnrollment = {
-      user: currentUser._id,
-      course: course._id,
-    };
-    dispatch(enroll(newEnrollment));
+  const enrollCourse = async ({ course }: { course: any }) => {
+    await enrollClient.addEnrollment(currentUser._id, course._id);
+    fetchMyCourses();
+    dispatch(enroll({ userId: currentUser._id, courseId: course._id }));
   };
 
-  const dropCourse = ({ course }: { course: any }) => {
-    const enrollment = enrollments.find((e: any) =>
-      e.user === currentUser._id && e.course === course._id);
-    dispatch(unenroll(enrollment._id));
+  const dropCourse = async ({ course }: { course: any }) => {
+    await enrollClient.deleteEnrollment(currentUser._id, course._id);
+    fetchMyCourses();
+    dispatch(unenroll({ userId: currentUser._id, courseId: course._id }));
   };
 
   const isCourseEnrolled = (course: any) =>
@@ -52,7 +68,7 @@ export default function Dashboard(
       enrollment.user === currentUser._id && enrollment.course === course._id);
 
   // Filter show courses
-  const filteredCourses = showAllCourses ? allCourses : courses;
+  const filteredCourses = showAllCourses ? allCourses : myCourses;
 
   return (
     <div id="wd-dashboard">
