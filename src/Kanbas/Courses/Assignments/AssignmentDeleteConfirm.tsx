@@ -1,12 +1,12 @@
 export default function AssignmentDeleteConfirm(
-  {aid, deleteAssignment,}: {aid: string, deleteAssignment: (aid: string) => void}) {
+  {aid, assignmentName, deleteAssignment,}: {aid: string, assignmentName: string,  deleteAssignment: (aid: string) => void}) {
   return (
-    <div id="wd-delete-assignment-dialog" className="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div id={`wd-delete-assignment-dialog-${aid}`} className="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
       <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-header">
             <h1 className="modal-title fs-5" id="staticBackdropLabel">
-              Are you sure to remove this assignment? </h1>
+              Are you sure to remove {assignmentName}? </h1>
             <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div className="modal-footer">
