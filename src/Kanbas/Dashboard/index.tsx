@@ -68,7 +68,8 @@ export default function Dashboard(
       enrollment.user === currentUser._id && enrollment.course === course._id);
 
   // Filter show courses
-  const filteredCourses = showAllCourses ? allCourses : myCourses;
+  const studentCourses = showAllCourses ? allCourses : myCourses;
+  const filteredCourses = isStudent ? studentCourses : courses;
 
   return (
     <div id="wd-dashboard">
