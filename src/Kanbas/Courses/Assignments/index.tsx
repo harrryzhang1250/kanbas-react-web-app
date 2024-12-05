@@ -49,6 +49,7 @@ export default function Assignments({ isFaculty }: { isFaculty: boolean }) {
   const handleDeleteAssignment = async () => {
     if (assignmentToDelete) {
       await assignmentsClient.deleteAssignment(assignmentToDelete);
+      console.log(assignmentToDelete);
       dispatch(deleteAssignment(assignmentToDelete));
       setAssignmentToDelete(null); // reset after deletion
     }

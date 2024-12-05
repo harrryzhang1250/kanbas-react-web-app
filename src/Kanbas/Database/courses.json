@@ -1,7 +1,7 @@
 [
     {
         "name": "Rocket Propulsion",
-        "number": "RS4550",
+        "number": "RS101",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "D123",
@@ -10,7 +10,7 @@
     },
     {
         "name": "Aerodynamics",
-        "number": "RS4560",
+        "number": "RS102",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "D123",
@@ -19,7 +19,7 @@
     },
     {
         "name": "Spacecraft Design",
-        "number": "RS4570",
+        "number": "RS103",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "D123",
@@ -28,7 +28,7 @@
     },
     {
         "name": "Organic Chemistry",
-        "number": "CH1230",
+        "number": "RS104",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "D134",
@@ -37,7 +37,7 @@
     },
     {
         "name": "Inorganic Chemistry",
-        "number": "CH1240",
+        "number": "RS105",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "D134",
@@ -46,7 +46,7 @@
     },
     {
         "name": "Physical Chemistry",
-        "number": "CH1250",
+        "number": "RS106",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "D134",
@@ -55,7 +55,7 @@
     },
     {
         "name": "Ancient Languages and Scripts of Middle-earth",
-        "number": "ME101",
+        "number": "RS107",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Languages",
@@ -65,7 +65,7 @@
     },
     {
         "name": "Wizards, Elves, and Men: Inter-species Diplomacy in Middle-earth",
-        "number": "ME102",
+        "number": "RS108",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Political Studies",
@@ -75,7 +75,7 @@
     },
     {
         "name": "History and Practice of Middle-earth Magic",
-        "number": "ME103",
+        "number": "RS109",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Mystical Studies",
@@ -85,7 +85,7 @@
     },
     {
         "name": "Principles of Democratic Education",
-        "number": "EDU201",
+        "number": "RS110",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Education",
@@ -94,7 +94,7 @@
     },
     {
         "name": "Philosophy of Independence and Liberation",
-        "number": "HIS301",
+        "number": "RS111",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "History",
@@ -103,7 +103,7 @@
     },
     {
         "name": "Innovations in Early 19th Century Education",
-        "number": "EDU303",
+        "number": "RS112",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Education",
@@ -112,7 +112,7 @@
     },
     {
         "name": "Foundations of Christian Ethics",
-        "number": "THEO101",
+        "number": "RS113",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Theology",
@@ -122,7 +122,7 @@
     },
     {
         "name": "Early Christianity and the Apostolic Age",
-        "number": "HIS201",
+        "number": "RS114",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "History",
@@ -132,7 +132,7 @@
     },
     {
         "name": "Leadership and Service in Christian Communities",
-        "number": "MIN301",
+        "number": "RS115",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Ministry",
@@ -142,7 +142,7 @@
     },
     {
         "name": "Sufi Philosophy and Mystical Traditions",
-        "number": "ISL301",
+        "number": "RS116",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Islamic Studies",
@@ -152,7 +152,7 @@
     },
     {
         "name": "Ethical Wisdom in Islamic Teachings",
-        "number": "ISL202",
+        "number": "RS117",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Islamic Ethics",
@@ -162,7 +162,7 @@
     },
     {
         "name": "Understanding the Unseen: Islamic Esotericism",
-        "number": "ISL403",
+        "number": "RS118",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Islamic Mysticism",
@@ -172,7 +172,7 @@
     },
     {
         "name": "Ancient Chinese Environmental Management",
-        "number": "ENV101",
+        "number": "RS119",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Environmental Studies",
@@ -181,7 +181,7 @@
     },
     {
         "name": "Leadership Lessons from Chinese Mythology",
-        "number": "MGT201",
+        "number": "RS120",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Management Studies",
@@ -190,7 +190,7 @@
     },
     {
         "name": "Hydraulic Engineering in Ancient Civilizations",
-        "number": "ENG303",
+        "number": "RS121",
         "startDate": "2023-01-10",
         "endDate": "2023-05-15",
         "department": "Engineering",

@@ -2,7 +2,7 @@
     {
         "name": "Rocket Propulsion",
         "description": "In-depth study of the fundamentals of rocket propulsion, including propulsion theory, engine types, fuel chemistry, and practical applications.",
-        "course": "RS101",
+        "course": "67511703f69ec08cc3326480",
         "lessons": [
             {
                 "name": "Introduction to Rocket Propulsion",
@@ -29,7 +29,7 @@
     {
         "name": "Rocket Propulsion",
         "description": "In-depth study of the fundamentals of rocket propulsion, including propulsion theory, engine types, fuel chemistry, and practical applications.",
-        "course": "RS101",
+        "course": "67511703f69ec08cc3326480",
         "lessons": [
             {
                 "name": "Introduction to Rocket Propulsion",
@@ -56,7 +56,7 @@
     {
         "name": "Rocket Propulsion",
         "description": "In-depth study of the fundamentals of rocket propulsion, including propulsion theory, engine types, fuel chemistry, and practical applications.",
-        "course": "RS101",
+        "course": "67511703f69ec08cc3326480",
         "lessons": [
             {
                 "name": "Introduction to Rocket Propulsion",
@@ -83,7 +83,7 @@
     {
         "name": "Aerodynamics",
         "description": "Comprehensive exploration of aerodynamics, focusing on airflow and its effects on flying objects.",
-        "course": "RS102",
+        "course": "67511703f69ec08cc3326481",
         "lessons": [
             {
                 "name": "Introduction to Aerodynamics",
@@ -105,7 +105,7 @@
     {
         "name": "Aerodynamics",
         "description": "Comprehensive exploration of aerodynamics, focusing on airflow and its effects on flying objects.",
-        "course": "RS102",
+        "course": "67511703f69ec08cc3326481",
         "lessons": [
             {
                 "name": "Introduction to Aerodynamics",
@@ -127,7 +127,7 @@
     {
         "name": "Aerodynamics",
         "description": "Comprehensive exploration of aerodynamics, focusing on airflow and its effects on flying objects.",
-        "course": "RS102",
+        "course": "67511703f69ec08cc3326481",
         "lessons": [
             {
                 "name": "Introduction to Aerodynamics",
@@ -149,7 +149,7 @@
     {
         "name": "Spacecraft Design",
         "description": "Detailed understanding of spacecraft systems, focusing on propulsion, power systems, and payload integration.",
-        "course": "RS103",
+        "course": "67511703f69ec08cc3326482",
         "lessons": [
             {
                 "name": "Introduction to Spacecraft Design",
@@ -171,7 +171,7 @@
     {
         "name": "Spacecraft Design",
         "description": "Detailed understanding of spacecraft systems, focusing on propulsion, power systems, and payload integration.",
-        "course": "RS103",
+        "course": "67511703f69ec08cc3326482",
         "lessons": [
             {
                 "name": "Introduction to Spacecraft Design",
@@ -193,7 +193,7 @@
     {
         "name": "Spacecraft Design",
         "description": "Detailed understanding of spacecraft systems, focusing on propulsion, power systems, and payload integration.",
-        "course": "RS103",
+        "course": "67511703f69ec08cc3326482",
         "lessons": [
             {
                 "name": "Introduction to Spacecraft Design",
@@ -215,7 +215,7 @@
     {
         "name": "Organic Chemistry",
         "description": "Explores the structure, properties, and reactions of organic compounds and materials.",
-        "course": "RS104",
+        "course": "67511703f69ec08cc3326483",
         "lessons": [
             {
                 "name": "Hydrocarbons",
@@ -237,7 +237,7 @@
     {
         "name": "Organic Chemistry",
         "description": "Explores the structure, properties, and reactions of organic compounds and materials.",
-        "course": "RS104",
+        "course": "67511703f69ec08cc3326483",
         "lessons": [
             {
                 "name": "Hydrocarbons",
@@ -259,7 +259,7 @@
     {
         "name": "Organic Chemistry",
         "description": "Explores the structure, properties, and reactions of organic compounds and materials.",
-        "course": "RS104",
+        "course": "67511703f69ec08cc3326483",
         "lessons": [
             {
                 "name": "Hydrocarbons",
@@ -281,7 +281,7 @@
     {
         "name": "Inorganic Chemistry",
         "description": "Focuses on the properties, structures, and behaviors of inorganic compounds.",
-        "course": "RS105",
+        "course": "67511703f69ec08cc3326484",
         "lessons": [
             {
                 "name": "Coordination Chemistry",
@@ -303,7 +303,7 @@
     {
         "name": "Inorganic Chemistry",
         "description": "Focuses on the properties, structures, and behaviors of inorganic compounds.",
-        "course": "RS105",
+        "course": "67511703f69ec08cc3326484",
         "lessons": [
             {
                 "name": "Coordination Chemistry",
@@ -325,7 +325,7 @@
     {
         "name": "Inorganic Chemistry",
         "description": "Focuses on the properties, structures, and behaviors of inorganic compounds.",
-        "course": "RS105",
+        "course": "67511703f69ec08cc3326484",
         "lessons": [
             {
                 "name": "Coordination Chemistry",
@@ -347,7 +347,7 @@
     {
         "name": "Physical Chemistry",
         "description": "Study of the physical properties of molecules and the chemical reactions they undergo.",
-        "course": "RS106",
+        "course": "67511703f69ec08cc3326485",
         "lessons": [
             {
                 "name": "Thermodynamics",
@@ -369,7 +369,7 @@
     {
         "name": "Physical Chemistry",
         "description": "Study of the physical properties of molecules and the chemical reactions they undergo.",
-        "course": "RS106",
+        "course": "67511703f69ec08cc3326485",
         "lessons": [
             {
                 "name": "Thermodynamics",
@@ -391,7 +391,7 @@
     {
         "name": "Physical Chemistry",
         "description": "Study of the physical properties of molecules and the chemical reactions they undergo.",
-        "course": "RS106",
+        "course": "67511703f69ec08cc3326485",
         "lessons": [
             {
                 "name": "Thermodynamics",
@@ -413,7 +413,7 @@
     {
         "name": "Ancient Languages and Scripts of Middle-earth",
         "description": "Exploration of Elvish, Dwarvish, and other languages of Middle-earth.",
-        "course": "RS107",
+        "course": "67511703f69ec08cc3326486",
         "lessons": [
             {
                 "name": "Introduction to Elvish",
@@ -435,7 +435,7 @@
     {
         "name": "Ancient Languages and Scripts of Middle-earth",
         "description": "Exploration of Elvish, Dwarvish, and other languages of Middle-earth.",
-        "course": "RS107",
+        "course": "67511703f69ec08cc3326486",
         "lessons": [
             {
                 "name": "Introduction to Elvish",
@@ -457,7 +457,7 @@
     {
         "name": "Ancient Languages and Scripts of Middle-earth",
         "description": "Exploration of Elvish, Dwarvish, and other languages of Middle-earth.",
-        "course": "RS107",
+        "course": "67511703f69ec08cc3326486",
         "lessons": [
             {
                 "name": "Introduction to Elvish",
@@ -479,7 +479,7 @@
     {
         "name": "Wizards, Elves, and Men: Inter-species Diplomacy in Middle-earth",
         "description": "Exploration of diplomatic relationships among different races of Middle-earth.",
-        "course": "RS108",
+        "course": "67511703f69ec08cc3326487",
         "lessons": [
             {
                 "name": "Council of Elrond",
@@ -501,7 +501,7 @@
     {
         "name": "Wizards, Elves, and Men: Inter-species Diplomacy in Middle-earth",
         "description": "Exploration of diplomatic relationships among different races of Middle-earth.",
-        "course": "RS108",
+        "course": "67511703f69ec08cc3326487",
         "lessons": [
             {
                 "name": "Council of Elrond",
@@ -523,7 +523,7 @@
     {
         "name": "Wizards, Elves, and Men: Inter-species Diplomacy in Middle-earth",
         "description": "Exploration of diplomatic relationships among different races of Middle-earth.",
-        "course": "RS108",
+        "course": "67511703f69ec08cc3326487",
         "lessons": [
             {
                 "name": "Council of Elrond",
@@ -545,7 +545,7 @@
     {
         "name": "History and Practice of Middle-earth Magic",
         "description": "Study of magical beings and artifacts in Middle-earth.",
-        "course": "RS109",
+        "course": "67511703f69ec08cc3326488",
         "lessons": [
             {
                 "name": "Wizards and Elves",
@@ -567,7 +567,7 @@
     {
         "name": "History and Practice of Middle-earth Magic",
         "description": "Study of magical beings and artifacts in Middle-earth.",
-        "course": "RS109",
+        "course": "67511703f69ec08cc3326488",
         "lessons": [
             {
                 "name": "Wizards and Elves",
@@ -589,7 +589,7 @@
     {
         "name": "History and Practice of Middle-earth Magic",
         "description": "Study of magical beings and artifacts in Middle-earth.",
-        "course": "RS109",
+        "course": "67511703f69ec08cc3326488",
         "lessons": [
             {
                 "name": "Wizards and Elves",
@@ -611,7 +611,7 @@
     {
         "name": "Principles of Democratic Education",
         "description": "Study of educational principles in democratic societies.",
-        "course": "RS110",
+        "course": "67511703f69ec08cc3326489",
         "lessons": [
             {
                 "name": "Democratic Schooling",
@@ -633,7 +633,7 @@
     {
         "name": "Principles of Democratic Education",
         "description": "Study of educational principles in democratic societies.",
-        "course": "RS110",
+        "course": "67511703f69ec08cc3326489",
         "lessons": [
             {
                 "name": "Democratic Schooling",
@@ -655,7 +655,7 @@
     {
         "name": "Principles of Democratic Education",
         "description": "Study of educational principles in democratic societies.",
-        "course": "RS110",
+        "course": "67511703f69ec08cc3326489",
         "lessons": [
             {
                 "name": "Democratic Schooling",
@@ -677,7 +677,7 @@
     {
         "name": "Philosophy of Independence and Liberation",
         "description": "Study of philosophical underpinnings of independence and liberation movements, focusing on Latin American history.",
-        "course": "RS111",
+        "course": "67511703f69ec08cc332648a",
         "lessons": [
             {
                 "name": "Enlightenment Thought",
@@ -699,7 +699,7 @@
     {
         "name": "Philosophy of Independence and Liberation",
         "description": "Study of philosophical underpinnings of independence and liberation movements, focusing on Latin American history.",
-        "course": "RS111",
+        "course": "67511703f69ec08cc332648a",
         "lessons": [
             {
                 "name": "Enlightenment Thought",
@@ -721,7 +721,7 @@
     {
         "name": "Philosophy of Independence and Liberation",
         "description": "Study of philosophical underpinnings of independence and liberation movements, focusing on Latin American history.",
-        "course": "RS111",
+        "course": "67511703f69ec08cc332648a",
         "lessons": [
             {
                 "name": "Enlightenment Thought",
@@ -743,7 +743,7 @@
     {
         "name": "Innovations in Early 19th Century Education",
         "description": "Exploration of innovative educational practices and theories in the early 19th century.",
-        "course": "RS112",
+        "course": "67511703f69ec08cc332648b",
         "lessons": [
             {
                 "name": "Simon Rodr\u00edguez\u2019s Contributions",
@@ -765,7 +765,7 @@
     {
         "name": "Innovations in Early 19th Century Education",
         "description": "Exploration of innovative educational practices and theories in the early 19th century.",
-        "course": "RS112",
+        "course": "67511703f69ec08cc332648b",
         "lessons": [
             {
                 "name": "Simon Rodr\u00edguez\u2019s Contributions",
@@ -787,7 +787,7 @@
     {
         "name": "Innovations in Early 19th Century Education",
         "description": "Exploration of innovative educational practices and theories in the early 19th century.",
-        "course": "RS112",
+        "course": "67511703f69ec08cc332648b",
         "lessons": [
             {
                 "name": "Simon Rodr\u00edguez\u2019s Contributions",
@@ -809,7 +809,7 @@
     {
         "name": "Foundations of Christian Ethics",
         "description": "Study of core principles of Christian ethics derived from biblical texts.",
-        "course": "RS113",
+        "course": "67511703f69ec08cc332648c",
         "lessons": [
             {
                 "name": "Moral Decision-Making",
@@ -831,7 +831,7 @@
     {
         "name": "Foundations of Christian Ethics",
         "description": "Study of core principles of Christian ethics derived from biblical texts.",
-        "course": "RS113",
+        "course": "67511703f69ec08cc332648c",
         "lessons": [
             {
                 "name": "Moral Decision-Making",
@@ -853,7 +853,7 @@
     {
         "name": "Foundations of Christian Ethics",
         "description": "Study of core principles of Christian ethics derived from biblical texts.",
-        "course": "RS113",
+        "course": "67511703f69ec08cc332648c",
         "lessons": [
             {
                 "name": "Moral Decision-Making",
@@ -875,7 +875,7 @@
     {
         "name": "Early Christianity and the Apostolic Age",
         "description": "Historical study of early Christian communities and the Apostolic Age.",
-        "course": "RS114",
+        "course": "67511703f69ec08cc332648d",
         "lessons": [
             {
                 "name": "Life of Jesus Christ",
@@ -897,7 +897,7 @@
     {
         "name": "Early Christianity and the Apostolic Age",
         "description": "Historical study of early Christian communities and the Apostolic Age.",
-        "course": "RS114",
+        "course": "67511703f69ec08cc332648d",
         "lessons": [
             {
                 "name": "Life of Jesus Christ",
@@ -919,7 +919,7 @@
     {
         "name": "Early Christianity and the Apostolic Age",
         "description": "Historical study of early Christian communities and the Apostolic Age.",
-        "course": "RS114",
+        "course": "67511703f69ec08cc332648d",
         "lessons": [
             {
                 "name": "Life of Jesus Christ",
@@ -941,7 +941,7 @@
     {
         "name": "Leadership and Service in Christian Communities",
         "description": "Insights into leadership and service within Christian communities.",
-        "course": "RS115",
+        "course": "67511703f69ec08cc332648e",
         "lessons": [
             {
                 "name": "Pastoral Care",
@@ -963,7 +963,7 @@
     {
         "name": "Leadership and Service in Christian Communities",
         "description": "Insights into leadership and service within Christian communities.",
-        "course": "RS115",
+        "course": "67511703f69ec08cc332648e",
         "lessons": [
             {
                 "name": "Pastoral Care",
@@ -985,7 +985,7 @@
     {
         "name": "Leadership and Service in Christian Communities",
         "description": "Insights into leadership and service within Christian communities.",
-        "course": "RS115",
+        "course": "67511703f69ec08cc332648e",
         "lessons": [
             {
                 "name": "Pastoral Care",
@@ -1007,7 +1007,7 @@
     {
         "name": "Sufi Philosophy and Mystical Traditions",
         "description": "Exploration of Sufi philosophy and mystical practices in Islamic spirituality.",
-        "course": "RS116",
+        "course": "67511703f69ec08cc332648f",
         "lessons": [
             {
                 "name": "Key Figures in Sufism",
@@ -1029,7 +1029,7 @@
     {
         "name": "Sufi Philosophy and Mystical Traditions",
         "description": "Exploration of Sufi philosophy and mystical practices in Islamic spirituality.",
-        "course": "RS116",
+        "course": "67511703f69ec08cc332648f",
         "lessons": [
             {
                 "name": "Key Figures in Sufism",
@@ -1051,7 +1051,7 @@
     {
         "name": "Sufi Philosophy and Mystical Traditions",
         "description": "Exploration of Sufi philosophy and mystical practices in Islamic spirituality.",
-        "course": "RS116",
+        "course": "67511703f69ec08cc332648f",
         "lessons": [
             {
                 "name": "Key Figures in Sufism",
@@ -1073,7 +1073,7 @@
     {
         "name": "Ethical Wisdom in Islamic Teachings",
         "description": "Study of moral teachings and ethical wisdom found in the Quran and Hadith.",
-        "course": "RS117",
+        "course": "67511703f69ec08cc3326490",
         "lessons": [
             {
                 "name": "Divine Guidance and Free Will",
@@ -1095,7 +1095,7 @@
     {
         "name": "Ethical Wisdom in Islamic Teachings",
         "description": "Study of moral teachings and ethical wisdom found in the Quran and Hadith.",
-        "course": "RS117",
+        "course": "67511703f69ec08cc3326490",
         "lessons": [
             {
                 "name": "Divine Guidance and Free Will",
@@ -1117,7 +1117,7 @@
     {
         "name": "Ethical Wisdom in Islamic Teachings",
         "description": "Study of moral teachings and ethical wisdom found in the Quran and Hadith.",
-        "course": "RS117",
+        "course": "67511703f69ec08cc3326490",
         "lessons": [
             {
                 "name": "Divine Guidance and Free Will",
@@ -1139,7 +1139,7 @@
     {
         "name": "Understanding the Unseen: Islamic Esotericism",
         "description": "Study of esoteric aspects of Islam, focusing on the unseen world and spiritual symbolism.",
-        "course": "RS118",
+        "course": "67511703f69ec08cc3326491",
         "lessons": [
             {
                 "name": "Spiritual Symbolism in Islamic Texts",
@@ -1161,7 +1161,7 @@
     {
         "name": "Understanding the Unseen: Islamic Esotericism",
         "description": "Study of esoteric aspects of Islam, focusing on the unseen world and spiritual symbolism.",
-        "course": "RS118",
+        "course": "67511703f69ec08cc3326491",
         "lessons": [
             {
                 "name": "Spiritual Symbolism in Islamic Texts",
@@ -1183,7 +1183,7 @@
     {
         "name": "Understanding the Unseen: Islamic Esotericism",
         "description": "Study of esoteric aspects of Islam, focusing on the unseen world and spiritual symbolism.",
-        "course": "RS118",
+        "course": "67511703f69ec08cc3326491",
         "lessons": [
             {
                 "name": "Spiritual Symbolism in Islamic Texts",
@@ -1205,7 +1205,7 @@
     {
         "name": "Ancient Chinese Environmental Management",
         "description": "Exploration of environmental management in ancient China, focusing on Yu the Great.",
-        "course": "RS119",
+        "course": "67511703f69ec08cc3326492",
         "lessons": [
             {
                 "name": "Yu the Great\u2019s Achievements",
@@ -1227,7 +1227,7 @@
     {
         "name": "Ancient Chinese Environmental Management",
         "description": "Exploration of environmental management in ancient China, focusing on Yu the Great.",
-        "course": "RS119",
+        "course": "67511703f69ec08cc3326492",
         "lessons": [
             {
                 "name": "Yu the Great\u2019s Achievements",
@@ -1249,7 +1249,7 @@
     {
         "name": "Ancient Chinese Environmental Management",
         "description": "Exploration of environmental management in ancient China, focusing on Yu the Great.",
-        "course": "RS119",
+        "course": "67511703f69ec08cc3326492",
         "lessons": [
             {
                 "name": "Yu the Great\u2019s Achievements",
@@ -1271,7 +1271,7 @@
     {
         "name": "Leadership Lessons from Chinese Mythology",
         "description": "Study of leadership qualities and actions in Chinese mythology, focusing on Yu the Great.",
-        "course": "RS120",
+        "course": "67511703f69ec08cc3326493",
         "lessons": [
             {
                 "name": "Leadership in Chinese Mythology",
@@ -1293,7 +1293,7 @@
     {
         "name": "Leadership Lessons from Chinese Mythology",
         "description": "Study of leadership qualities and actions in Chinese mythology, focusing on Yu the Great.",
-        "course": "RS120",
+        "course": "67511703f69ec08cc3326493",
         "lessons": [
             {
                 "name": "Leadership in Chinese Mythology",
@@ -1315,7 +1315,7 @@
     {
         "name": "Leadership Lessons from Chinese Mythology",
         "description": "Study of leadership qualities and actions in Chinese mythology, focusing on Yu the Great.",
-        "course": "RS120",
+        "course": "67511703f69ec08cc3326493",
         "lessons": [
             {
                 "name": "Leadership in Chinese Mythology",
@@ -1337,7 +1337,7 @@
     {
         "name": "Hydraulic Engineering in Ancient Civilizations",
         "description": "Study of ancient hydraulic engineering with a focus on Yu the Great's flood control systems.",
-        "course": "RS121",
+        "course": "67511703f69ec08cc3326494",
         "lessons": [
             {
                 "name": "Ancient Dams and Canals",
@@ -1359,7 +1359,7 @@
     {
         "name": "Hydraulic Engineering in Ancient Civilizations",
         "description": "Study of ancient hydraulic engineering with a focus on Yu the Great's flood control systems.",
-        "course": "RS121",
+        "course": "67511703f69ec08cc3326494",
         "lessons": [
             {
                 "name": "Ancient Dams and Canals",
@@ -1381,7 +1381,7 @@
     {
         "name": "Hydraulic Engineering in Ancient Civilizations",
         "description": "Study of ancient hydraulic engineering with a focus on Yu the Great's flood control systems.",
-        "course": "RS121",
+        "course": "67511703f69ec08cc3326494",
         "lessons": [
             {
                 "name": "Ancient Dams and Canals",

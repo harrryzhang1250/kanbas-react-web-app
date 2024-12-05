@@ -12,14 +12,52 @@ import * as courseClient from "./Courses/client";
 import * as userClient from "./Account/client";
 
 export default function Kanbas() {
+  const { currentUser } = useSelector((state: any) => state.accountReducer);
+  const isFaculty = currentUser?.role === "FACULTY";
   const [courses, setCourses] = useState<any[]>([]);
   const [course, setCourse] = useState<any>({
     _id: "0", name: "New Course", number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
     image: "/images/reactjs.jpg", description: "New Description"
   });
+  const [enrolling, setEnrolling] = useState<boolean>(false);
+  const findCoursesForUser = async () => {
+    try {
+      const courses = await userClient.findCoursesForUser(currentUser._id);
+      setCourses(courses);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  const fetchCourses = async () => {
+    try {
+      const allCourses = await courseClient.fetchAllCourses();
+      const enrolledCourses = await userClient.findCoursesForUser(
+        currentUser._id
+      );
+      const courses = allCourses.map((course: any) => {
+        if (enrolledCourses.find((c: any) => c._id === course._id)) {
+          return { ...course, enrolled: true };
+        } else {
+          return course;
+        }
+      });
+      setCourses(courses);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    if (enrolling) {
+      fetchCourses();
+    } else {
+      findCoursesForUser();
+    }
+  }, [currentUser, enrolling]);
+
   const addNewCourse = async() => {
-    const newCourse = await userClient.createCourse(course);
+    const newCourse = await courseClient.createCourse(course);
     setCourses([ ...courses, newCourse ]);
   };
   const deleteCourse = async(courseId: string) => {
@@ -31,21 +69,8 @@ export default function Kanbas() {
     setCourses(courses.map((c) => ( c._id === course._id ? course : c )));
     setCourse({ ...course, name: "New Course", description: "New Description"});
   };
-  const { currentUser } = useSelector((state: any) => state.accountReducer);
-  const fetchCourses = async () => {
-    let courses = [];
-    try {
-      courses = await userClient.findMyCourses();
-    } catch (error) {
-      console.error(error);
-    }
-    setCourses(courses);
-  };
-  useEffect(() => {
-    fetchCourses();
-  }, [currentUser]);
 
-  const isFaculty = currentUser?.role === "FACULTY";
+
   return (
     <Session>
       <div id="wd-kanbas">
@@ -64,6 +89,8 @@ export default function Kanbas() {
                   deleteCourse={deleteCourse}
                   updateCourse={updateCourse}
                   isFaculty={isFaculty}
+                  enrolling={enrolling}
+                  setEnrolling={setEnrolling}
                 />
               </ProtectedRoute>
             }/>
